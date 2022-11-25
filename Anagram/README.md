@@ -21,6 +21,6 @@
   Flow:
   1. In main we declaring one variable and assigning one string 
   2. finding the length of string.
-  3. then calling permute() function and passing string, length of string-1 and starting index of string i.e. 0 as an argument.
+  3. then calling permute() function and passing string, length of string-1 and starting index of string i.e.  as an argument.
   4. as function executes and print all possible permutation of the string.
   
