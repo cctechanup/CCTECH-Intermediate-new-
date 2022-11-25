@@ -1,3 +1,5 @@
+1. Developed this code for calculating Simple Interest.
+
 *****Test Cases for Simple Interest Calculator*****
 
 1. If we enter principal, rate and year as zero then it simply print the actual values of the variables.
@@ -34,7 +36,7 @@ Simple Interest : 170
 
 
 
-1. Developed this code for calculating Simple Interest.
+
 Flow:
 1. Declared the class containing private data members and member function.
 2. Created the instance of class in main and initialized the values of data members with the helped of constructor.

@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-int permute(string &word, int left, int right)
+bool permute(string &word, int left, int right)
 {
 
     if (left == right)
@@ -19,5 +19,5 @@ int permute(string &word, int left, int right)
             swap(word[left], word[i]);
         }
     }
-    return 0;
+    return true;
 }

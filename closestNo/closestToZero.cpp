@@ -12,7 +12,7 @@ int main()
     vec.push_back(5);
     vec.push_back(-1);
 
-    assert(findClosestNumber(vec));
+    assert(findClosestNumber(vec)==5);
 
     return EXIT_SUCCESS;
 }
