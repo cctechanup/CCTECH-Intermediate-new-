@@ -1,18 +1,26 @@
 #include <iostream>
-#include <vector>
 #include <cassert>
-#include "source.h"
 
+#include <cstdlib>
 using namespace std;
-
+int findClosestNumber(int arr[], int length)
+{
+    int currValue = 0;
+    int closestValue = arr[0];
+    for (int i = 0; i < length; i++)
+    {
+        currValue = arr[i] * arr[i];
+        if (currValue <= (closestValue * closestValue))
+        {
+            closestValue = arr[i];
+        }
+    }
+    return closestValue;
+}
 int main()
 {
-    vector<int> vec;
-    vec.push_back(1);
-    vec.push_back(5);
-    vec.push_back(-1);
+    int arr[] = {-2, -1, 1, 9, 2, 3};
+    assert(findClosestNumber(arr, sizeof(arr) / sizeof(int)) == 1);
 
-    assert(findClosestNumber(vec)==5);
-
-    return EXIT_SUCCESS;
+    exit(0);
 }
