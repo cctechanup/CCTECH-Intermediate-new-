@@ -34,7 +34,7 @@ bool checkLeapYear(int year)
 
     else if (year % 100 == 0)
     {
-       return false;
+        return false;
     }
 
     else if (year % 4 == 0)
@@ -44,7 +44,7 @@ bool checkLeapYear(int year)
 
     else
     {
-       return false;
+        return false;
     }
 }
 
@@ -53,7 +53,8 @@ int main()
     int year;
     std::cout << "Enter Year" << std::endl;
     std::cin >> year;
-    assert(checkLeapYear(year));
-    
+    assert(checkLeapYear(year) == 1);
+    assert(checkLeapYear(year) == 0);
+
     return 0;
 }

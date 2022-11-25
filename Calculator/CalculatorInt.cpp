@@ -17,7 +17,7 @@ void addition(long long int number1, long long int number2)
     if ((number1 >= 4294967295 && number2 > 0) || (number2 >= 4294967295 && number1 > 0))
     {
         unsigned int addition = 0;
-        if ((addition = number1 + number2) >= 4294967295)
+        if ((number1 + number2) >= 4294967295)
         {
             throw runtime_error("error at line no 22 :addition out of range");
         }
@@ -44,9 +44,16 @@ void substraction(long long int number1, long long int number2)
     else
     {
         diff = number1 - (number2);
+        if (diff >= INT_MIN)
+        {
+            cout << endl
+                 << "substraction : " << diff;
+        }
+        else
+        {
+            throw runtime_error("Math error : output is out of range");
+        }
     }
-    cout << endl
-         << "substraction : " << number1-(number2);
 }
 
 void multiplication(long long int number1, long long int number2)
