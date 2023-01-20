@@ -35,7 +35,9 @@ int main(int argc, char *argv[])
                     cout << ch_1;
                 }
             }
-           
+            fclose(fp);
         }
     }
+   
+    return 0;
 }
